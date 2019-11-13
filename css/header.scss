@@ -104,12 +104,12 @@ header {
         align-items: center;
         justify-content: space-evenly;
         cursor: pointer;
-        
+
 
         .btn-lines {
             width: 80%;
             height: 3px;
-            background: #000;
+            background: #fff;
             border-radius: 2rem;
             transition: all .3s ease-in-out;
         }
@@ -174,11 +174,11 @@ header {
         nav {
             padding: 18px 40px;
         }
-    
+
         .logo {
             width: 200px;
         }
-    
+
         .menu .list {
             position: absolute;
             flex-direction: column;
@@ -203,7 +203,7 @@ header {
                     color: #fff;
                 }
             }
-            
+
             &-item {
                 margin: 7px 0;
             }
@@ -224,7 +224,7 @@ header {
         .nav-contact {
             &-link {
                 font-size: 20px;
-    
+
                 i {
                     margin-right: 7px;
                 }
@@ -236,7 +236,7 @@ header {
         nav {
             padding: 18px 30px;
         }
-    
+
         .logo {
             width: 180px;
         }
@@ -263,7 +263,7 @@ header {
         nav {
             padding: 18px 20px;
         }
-    
+
         .logo {
             width: 140px;
         }
@@ -327,8 +327,10 @@ header {
             font-size: 28px;
             line-height: 40px;
         }
+
         .btn-primary {
-            margin-top: 61px;
+            margin-top: 20px;
+            display: inline-block;
         }
     }
 
