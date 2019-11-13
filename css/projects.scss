@@ -1,0 +1,140 @@
+@import './smart-grid.scss';
+
+.projects {
+    padding: 80px 0;
+
+    .row {
+        justify-content: space-evenly;
+    }
+
+    .projects-container.hide .project.hidable {
+        display: none;
+    }
+
+    @include xs-block {
+        .btn-primary {
+            font-size: 20px;
+        }
+    }
+}
+
+.project {
+    background: #2379be;
+    color: #fff;
+    margin: 10px;
+    margin-bottom: 22px;
+    margin-top: 0;
+    max-width: 350px;
+    width: 350px;
+    padding: 30px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    min-height: 345px;
+    font-size: 20px;
+
+    &-head {
+        display: flex;
+
+        .img {
+            margin-right: 10px;
+            min-width: 80px;
+
+
+            img {
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &-title {
+        font-size: 24px;
+    }
+
+    &-open-link {
+        font-size: 27px;
+        line-height: 31px;
+        cursor: pointer;
+        color: #fff;
+
+        img {
+            display: inline-block;
+            border: none;
+            box-shadow: none;
+            height: 1em;
+            width: 1em;
+            margin: 0 .07em;
+            vertical-align: -0.1em;
+            background: none;
+            padding: 0;
+            margin-right: 10px;
+        }
+    }
+
+    &-desc {
+        margin-top: 20px;
+
+        p {
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        ul {
+            margin: 22px 25px 0 10px;
+
+            li {
+                list-style: disc !important;
+            }
+        }
+    }
+
+    @include xs-block {
+        &-title {
+            font-size: 25px;
+        }
+
+        &-open-link {
+            font-size: 25px;
+            line-height: 30px;
+            cursor: pointer;
+            color: #fff;
+
+            img {
+                display: inline-block;
+                border: none;
+                box-shadow: none;
+                height: 1em;
+                width: 1em;
+                margin: 0 .07em;
+                vertical-align: -0.1em;
+                background: none;
+                padding: 0;
+                margin-right: 10px;
+            }
+        }
+
+        .img {
+            margin-right: 10px;
+
+            img {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            }
+        }
+
+        &-desc {
+            p {
+                font-size: 17px;
+                line-height: 30px;
+            }
+
+            ul {
+                margin: 12px 15px 0 10px;
+
+                li {
+                    list-style: disc !important;
+                }
+            }
+        }
+    }
+}
